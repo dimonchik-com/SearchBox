@@ -1,0 +1,113 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  margin: 20px 0 20px 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Input-control{
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 3px 8px;
+}
+
+.Search-wrapper{line-height: 0px;}
+.Search-wrapper div{display: inline-block;}
+.Input-load{
+  background: url("./images/ajax-loader.gif") no-repeat;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 0;
+  margin: 5px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.React-dropdown {
+  position: relative;
+}
+
+/*.Input-control:active{font-weight: bold}*/
+
+.Button-control{
+  padding: 5px;
+  border-radius: 4px;
+  margin-left: 5px;
+}
+
+.Input-wrapper{position: relative;}
+
+.Popup-list ul{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  margin: 4px 0 0;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 0px;
+  width: 100%;
+  padding: 3px 0 3px 0;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.Popup-list ul li{
+  color: #000;
+}
+
+.Popup-list ul li a{
+  display: block;
+  padding: 3px 10px;
+  clear: both;
+  font-weight: 400;
+  line-height: 1.42857143;
+  color: #333;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.Popup-list ul li a:focus, .Popup-list ul li a:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #337ab7;
+  outline: 0;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
