@@ -3,7 +3,7 @@ import {useDispatch, useSelector} from "react-redux";
 import * as Actions from './../actions'
 
 function SearchInput() {
-    const refInput = useRef();
+    const refInput:any = useRef();
     const dispatch = useDispatch();
     const searchText = useSelector((state:any)=>state.searchText);
     const startLoad = useSelector((state:any)=>state.startLoad);

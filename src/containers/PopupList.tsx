@@ -3,7 +3,7 @@ import {useDispatch, useSelector} from "react-redux";
 import * as Actions from "../actions";
 import Parser from 'html-react-parser';
 
-const PopupList = React.forwardRef((props, ref) => {
+const PopupList = React.forwardRef((props, ref:any) => {
     const dispatch = useDispatch();
     const popupList = useSelector((state:any)=>state.popupList);
     const searchText = useSelector((state:any)=>state.searchText);
